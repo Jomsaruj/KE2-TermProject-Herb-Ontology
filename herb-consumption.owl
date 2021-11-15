@@ -39,6 +39,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasTaste -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasTaste">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Taste"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -93,6 +101,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Taste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Taste"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -110,6 +124,15 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Substance"/>
         <canCure rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#fever"/>
         <canCure rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#inflammation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#bitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#bitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Taste"/>
+        <hasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#bitter"/>
     </owl:NamedIndividual>
     
 
