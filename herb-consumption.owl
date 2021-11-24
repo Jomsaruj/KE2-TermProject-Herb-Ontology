@@ -78,6 +78,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#conditionCanNotConsumeHerb -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#conditionCanNotConsumeHerb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Condition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#containSubstance -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#containSubstance">
@@ -107,6 +116,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasClimate">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Climate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Condition"/>
     </owl:ObjectProperty>
     
 
@@ -385,8 +403,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Mark">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
         <allegicToSubstance rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#potassium"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#pregnant"/>
         <hasCountry rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#norway"/>
-        <hasDisease rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#kidney_disease"/>
         <hasBirthMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasBirthMonth>
         <hasName>Auttakrit</hasName>
     </owl:NamedIndividual>
@@ -523,6 +541,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#pregnant">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Condition"/>
+        <conditionCanNotConsumeHerb rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#green_chiretta"/>
     </owl:NamedIndividual>
     
 
@@ -1550,7 +1569,7 @@
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkAllegicToHerb</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkAllegicToHerb1</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
