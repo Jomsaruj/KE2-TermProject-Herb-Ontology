@@ -60,6 +60,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#canNotConsumeFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#canNotConsumeFood">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Food"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#canNotConsumeSubstance -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#canNotConsumeSubstance">
@@ -89,6 +98,42 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#foodHasTaste">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Food"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Taste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasClimate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasClimate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Climate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasCountry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasElement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
     </owl:ObjectProperty>
     
 
@@ -125,6 +170,51 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbIsSuitableForFood">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForClimate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForClimate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Climate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForCountry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForElement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#personElementSuitableForHerb -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#personElementSuitableForHerb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#personLocationSuitableForHerb -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#personLocationSuitableForHerb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
     </owl:ObjectProperty>
     
 
@@ -167,6 +257,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#elementHasMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#elementHasMonth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasBirthMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasBirthMonth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasName">
@@ -195,9 +303,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Climate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Condition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country"/>
+    
+
+
     <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Disease -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
     
 
 
@@ -253,18 +385,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Mark">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
         <allegicToSubstance rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#potassium"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#TomYum -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#TomYum">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Food"/>
-        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#salty"/>
-        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sour"/>
-        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#spicy"/>
-        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sweet"/>
+        <hasCountry rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#norway"/>
+        <hasDisease rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#kidney_disease"/>
+        <hasBirthMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasBirthMonth>
+        <hasName>Auttakrit</hasName>
     </owl:NamedIndividual>
     
 
@@ -285,6 +409,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#asam_gelugur">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
         <containSubstance rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hydroxycitric_acid"/>
+        <herbSuitableForElement rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#water"/>
     </owl:NamedIndividual>
     
 
@@ -294,6 +419,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#bengal_currant">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
         <containSubstance rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#potassium"/>
+        <herbSuitableForClimate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#winter"/>
+        <herbSuitableForElement rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#water"/>
     </owl:NamedIndividual>
     
 
@@ -307,10 +434,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#earth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#earth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</elementHasMonth>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#fever -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#fever">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#fire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#fire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</elementHasMonth>
     </owl:NamedIndividual>
     
 
@@ -320,6 +469,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#green_chiretta">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
         <containSubstance rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#andrographolide"/>
+        <herbSuitableForClimate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#winter"/>
+        <herbSuitableForElement rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#water"/>
     </owl:NamedIndividual>
     
 
@@ -345,7 +496,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#kidney_disease">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Disease"/>
+        <canNotConsumeSubstance rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#andrographolide"/>
         <canNotConsumeSubstance rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#potassium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#norway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#norway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country"/>
+        <hasClimate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#winter"/>
     </owl:NamedIndividual>
     
 
@@ -354,6 +515,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#potassium">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Substance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#pregnant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#pregnant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Condition"/>
     </owl:NamedIndividual>
     
 
@@ -385,12 +554,112 @@
     
 
 
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#summer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#summer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Condition"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sweet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sweet">
         <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Taste"/>
         <hasTasteName>sweet</hasTasteName>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#thailand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#thailand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Country"/>
+        <hasClimate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#summer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#tomyum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#tomyum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Food"/>
+        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#salty"/>
+        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sour"/>
+        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#spicy"/>
+        <foodHasTaste rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sweet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#bengal_currant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</elementHasMonth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#wind -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#wind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Element"/>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</elementHasMonth>
+        <elementHasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</elementHasMonth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#winter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#winter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#asam_gelugur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#bengal_currant"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#asam_gelugur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#green_chiretta"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#bengal_currant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#green_chiretta"/>
+        </owl:distinctMembers>
+    </rdf:Description>
     
 
 
@@ -429,13 +698,49 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sym">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hf">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ch">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#cp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ah">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#eh">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ep">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#con">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#me">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -503,6 +808,257 @@
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#shouldNotConsumeHerb"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#d"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkHerbCanCure</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#containSubstance"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#substanceCanCure"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sym"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbCanCure"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sym"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkHerbTaste</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#containSubstance"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#substanceHasTaste"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbHasTaste"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkHerbForCountry</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForClimate"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasClimate"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#con"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForCountry"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#con"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkPersonElement</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasBirthMonth"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#elementHasMonth"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#e"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#me"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#me"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#m"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasElement"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#e"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -695,6 +1251,305 @@
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkCanNotConsumeFood</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Food"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasIngredient"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#f"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hf"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#allegicToHerb"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hp"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hf"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hp"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#canNotConsumeFood"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkPersonLocationSuitableForHerb</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForCountry"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ch"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ch"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#cp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasCountry"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#cp"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#allegicToHerb"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ah"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ah"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#personLocationSuitableForHerb"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkPersonElementSuittableForHerb</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Person"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbSuitableForElement"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#eh"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#hasElement"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ep"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#eh"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ep"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#allegicToHerb"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ah"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#ah"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#personElementSuitableForHerb"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkAllegicToHerb</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -745,124 +1600,6 @@
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#allegicToHerb"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#p"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkHerbCanCure</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#containSubstance"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#substanceCanCure"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sym"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbCanCure"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#sym"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">checkHerbTaste</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#Herb"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#containSubstance"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#substanceHasTaste"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#s"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#t"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#herbHasTaste"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#h"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jomsaruj/ontologies/2021/10/herb-consumption#t"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
